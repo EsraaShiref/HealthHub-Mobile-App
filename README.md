@@ -1,10 +1,7 @@
 # 📱 HealthHub Mobile App
 
-**HealthHub** is a comprehensive mobile application designed to promote a **healthy lifestyle** by combining:
-- Online consultations with doctors and nutritionists  
-- Articles and healthy recipes  
-- Body measurements and calorie tracking  
-- An e-commerce section for gym equipment and health tools  
+**HealthHub** is a comprehensive mobile application designed to promote a **healthy lifestyle** and simplify **medical appointment booking**.  
+It seamlessly integrates with a powerful **Laravel 10 backend** that handles authentication, scheduling, and e-commerce operations.
 
 ---
 
@@ -15,7 +12,33 @@
 
 ---
 
-## 🚀 Getting Started
+## 🧩 Backend Integration
+
+The HealthHub Mobile App is connected to a **Laravel 10 backend** that provides secure and efficient API endpoints for:
+- User Authentication (JWT-based)
+- Role-based Access (Admin, Doctor, Patient)
+- Appointment Scheduling and Management
+- E-commerce for medical products
+- Admin Reports and Statistics
+
+📘 Backend Repository: [HealthHub Laravel Backend](https://github.com/mohamedabdallah11/HealthHub)
+
+### 🔹 Example API Call (React Native → Laravel)
+```js
+import axios from "axios";
+
+const response = await axios.get("http://10.0.2.2:8000/api/doctor/appointments/show", {
+  headers: {
+    Authorization: `Bearer ${token}`,
+  },
+});
+```
+
+📍 *This demonstrates how the mobile app fetches doctor appointments from the Laravel backend.*
+
+---
+
+## 🚀 Getting Started (Mobile App)
 
 ### 1️⃣ Install dependencies
 ```bash
@@ -40,32 +63,74 @@ npm run ios
 ---
 
 ## ⚙️ Key Features
-- 🔹 Secure authentication and profile management  
-- 🔹 Calorie calculator and body fat tracking  
-- 🔹 Articles, nutrition tips, and healthy recipes  
-- 🔹 Online store for fitness and health tools  
-- 🔹 Doctor consultations via Google Meet  
+
+### 🔐 Authentication & Profiles
+- Secure login and registration (JWT token)
+- Role-based access (Admin, Doctor, Patient)
+
+### 📅 Appointment & Booking System
+- Doctors can set and edit availability
+- Patients can view and book available slots
+- Doctors confirm, reject, or mark appointments as served
+- Patients can cancel bookings under specific rules
+
+### 🛒 E-Commerce Module
+- Admins manage medical products and orders
+- Patients can browse, add to cart, and checkout securely
+- Integrated payment system (Stripe, PayPal-ready)
+
+### 🍎 Nutrition & Health Section
+- AI-based food recognition via **Clarifai API**
+- Nutrition and calorie details via **Spoonacular API**
+- Healthy articles, recipes, and fitness advice
 
 ---
 
 ## 🧠 Tech Stack
-- **React Native 0.72+**
-- **Node.js / Express (API backend)**
-- **Clarifai API** — Food image recognition  
-- **Spoonacular API** — Nutrition and calorie data  
-- **AsyncStorage** — Local user session storage  
-- **Axios** — API integration  
+
+| Category | Technology |
+|-----------|-------------|
+| Mobile App | React Native 0.72+ |
+| Backend API | Laravel 10 (PHP 8.2) |
+| Database | MySQL 8 |
+| APIs | Clarifai, Spoonacular |
+| State Management | Context API / AsyncStorage |
+| Networking | Axios |
+| Authentication | JWT Token |
+| Version Control | Git & GitHub |
+
+---
+
+## 🧩 System Architecture Overview
+
+```
++---------------------------+
+|      React Native App     |
+|  (HealthHub Frontend)     |
++------------+--------------+
+             |
+     RESTful API Calls
+             |
++------------v--------------+
+|     Laravel 10 Backend    |
+| Authentication | Booking  |
+| E-Commerce | Reporting    |
++------------+--------------+
+             |
+        MySQL Database
+```
 
 ---
 
 ## 👩‍💻 Developer
-**Esraa Shiref**
 
+**Esraa Shiref**  
 📧 [LinkedIn](https://www.linkedin.com/in/esraa-shiref/)  
 📂 [GitHub](https://github.com/EsraaShiref)
 
 ---
 
 ## 🏁 Notes
-> This project is still under active development.  
-> UI and performance improvements are continuously being added. 💪
+
+> This project is part of a full-stack solution that includes a Laravel backend and a React Native frontend.  
+> Both components work together to deliver a seamless medical booking and healthy living experience. 💪
