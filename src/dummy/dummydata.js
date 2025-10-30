@@ -1,0 +1,68 @@
+export const Governmentdata = [
+    { label: 'Cairo', value: 'cairo' },
+    { label: 'Alexandria', value: 'alexandria' },
+    { label: 'Giza', value: 'giza' },
+    { label: 'Dakahlia', value: 'dakahlia' },
+    { label: 'Red Sea', value: 'red_sea' },
+    { label: 'Beheira', value: 'beheira' },
+    { label: 'Fayoum', value: 'fayoum' },
+    { label: 'Gharbia', value: 'gharbia' },
+    { label: 'Ismailia', value: 'ismailia' },
+    { label: 'Menoufia', value: 'menoufia' },
+    { label: 'Minya', value: 'minya' },
+    { label: 'Qalyubia', value: 'qalyubia' },
+    { label: 'New Valley', value: 'new_valley' },
+    { label: 'Suez', value: 'suez' },
+    { label: 'Aswan', value: 'aswan' },
+    { label: 'Assiut', value: 'assiut' },
+    { label: 'Beni Suef', value: 'beni_suef' },
+    { label: 'Port Said', value: 'port_said' },
+    { label: 'Damietta', value: 'damietta' },
+    { label: 'South Sinai', value: 'south_sinai' },
+    { label: 'Kafr El Sheikh', value: 'kafr_el_sheikh' },
+    { label: 'Matrouh', value: 'matrouh' },
+    { label: 'Luxor', value: 'luxor' },
+    { label: 'Qena', value: 'qena' },
+    { label: 'North Sinai', value: 'north_sinai' },
+    { label: 'Sohag', value: 'sohag' },
+  ];
+
+  export const Gender =[
+    {label: 'Male', value: 'male'},
+    {label: 'Female', value: 'Female'}
+  ]
+  export const daysOfWeek = [
+    { day: "Sunday" },
+    { day: "Monday" },
+    { day: "Tuesday" },
+    { day: "Wednesday" },
+    { day: "Thursday" },
+    { day: "Friday" },
+    { day: "Saturday" }
+  ];
+  export const Time = [
+    { label: '1:00 AM', value: '01:00 AM' },
+    { label: '2:00 AM', value: '02:00 AM' },
+    { label: '3:00 AM', value: '03:00 AM' },
+    { label: '4:00 AM', value: '04:00 AM' },
+    { label: '5:00 AM', value: '05:00 AM' },
+    { label: '6:00 AM', value: '06:00 AM' },
+    { label: '7:00 AM', value: '07:00 AM' },
+    { label: '8:00 AM', value: '08:00 AM' },
+    { label: '9:00 AM', value: '09:00 AM' },
+    { label: '10:00 AM', value: '10:00 AM' },
+    { label: '11:00 AM', value: '11:00 AM' },
+    { label: '12:00 PM', value: '12:00 PM' },
+    { label: '1:00 PM', value: '01:00 PM' },
+    { label: '2:00 PM', value: '02:00 PM' },
+    { label: '3:00 PM', value: '03:00 PM' },
+    { label: '4:00 PM', value: '04:00 PM' },
+    { label: '5:00 PM', value: '05:00 PM' },
+    { label: '6:00 PM', value: '06:00 PM' },
+    { label: '7:00 PM', value: '07:00 PM' },
+    { label: '8:00 PM', value: '08:00 PM' },
+    { label: '9:00 PM', value: '09:00 PM' },
+    { label: '10:00 PM', value: '10:00 PM' },
+    { label: '11:00 PM', value: '11:00 PM' },
+    { label: '12:00 AM', value: '12:00 AM' }
+];
