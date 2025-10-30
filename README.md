@@ -1,2 +1,1 @@
-# HealthHub-Mobile-App
-Mobile Application using React-native
+HealthHub is a medical appointment booking Application designed to connect patients with doctors. The App allows doctors to manage their schedules, patients to book and track their appointments, and admins to oversee operations. It includes role-based access: Doctors can set availability, view appointments, and mark them as completed. Patients can book appointments, view their booking history, and cancel under certain conditions. Admins can manage doctors, patients, and system-wide configurations
